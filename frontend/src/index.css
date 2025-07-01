@@ -1,0 +1,25 @@
+/* Fonts & Base Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  background-color: #F5F5F5;
+  color: #1A2533;
+}
+
+/* Color variables */
+:root {
+  --deep-navy: #1A2533;
+  --soft-white: #F5F5F5;
+  --coral: #FF6F61;
+  --teal: #26A69A;
+}
+
+/* Smooth transitions */
+a, button {
+  transition: all 0.3s ease;
+}

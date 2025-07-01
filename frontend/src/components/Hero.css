@@ -1,0 +1,57 @@
+.hero-section {
+  height: 100vh;
+  width: 100%;
+  background: linear-gradient(135deg, #1A2533 30%, #26A69A 100%);
+  color: #F5F5F5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 220px; /* To make space for the sidebar */
+  text-align: center;
+  position: relative;
+}
+
+.hero-content {
+  max-width: 700px;
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  font-family: 'Poppins', sans-serif;
+  margin-bottom: 1rem;
+}
+
+.hero-content .highlight {
+  color: #FF6F61;
+}
+
+.hero-content p {
+  font-family: 'Lora', serif;
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.cta-button {
+  background-color: #FF6F61;
+  color: #1A2533;
+  padding: 12px 30px;
+  border: none;
+  border-radius: 25px;
+  text-decoration: none;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #F5F5F5;
+  color: #1A2533;
+  box-shadow: 0 0 10px #FF6F61;
+}
+
+/* Animation */
+@keyframes fadeIn {
+  0% { opacity: 0; transform: translateY(20px); }
+  100% { opacity: 1; transform: translateY(0); }
+}

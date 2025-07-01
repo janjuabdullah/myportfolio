@@ -1,0 +1,120 @@
+.projects-section {
+  padding: 100px 40px;
+  padding-left: 260px;
+  background-color: #F5F5F5;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.projects-section h2 {
+  font-size: 2.5rem;
+  font-family: 'Poppins', sans-serif;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+}
+
+.project-card {
+  background-color: #ffffff;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease;
+  position: relative;
+}
+
+.project-card:hover {
+  transform: scale(1.05);
+}
+
+.project-card img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+}
+
+.project-info {
+  padding: 20px;
+}
+
+.project-info h3 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.project-info p {
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+
+.tech-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 15px;
+}
+
+.tech-tags span {
+  background-color: #26A69A;
+  color: white;
+  font-size: 12px;
+  padding: 4px 10px;
+  border-radius: 12px;
+}
+
+.view-btn {
+  display: none;
+  background-color: #FF6F61;
+  color: white;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 20px;
+  font-size: 14px;
+  font-family: 'Poppins', sans-serif;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/* Show button on hover */
+.project-card:hover .view-btn {
+  display: inline-block;
+  animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.filter-bar {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.filter-bar button {
+  background-color: transparent;
+  border: 2px solid #1A2533;
+  color: #1A2533;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  padding: 8px 16px;
+  margin: 0 8px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.filter-bar button:hover {
+  background-color: #1A2533;
+  color: #fff;
+}
+
+.filter-bar .active {
+  background-color: #26A69A;
+  border-color: #26A69A;
+  color: #fff;
+}
